@@ -10,6 +10,7 @@ module.exports = gql`
   
   type Pin {
     _id: ID
+    createdAt: String
     title: String
     content: String
     image: String
@@ -17,17 +18,15 @@ module.exports = gql`
     longitude: Float
     author: User
     comments: [Comment]
-    createdAt: String
   }
 
   type Comment {
     text: String
-    author: User
     createdAt: String
+    author: User
   }
-
+  
   type Query {
     me: User
   }
-
   `
