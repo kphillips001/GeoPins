@@ -21,9 +21,9 @@ module.exports = gql`
   }
 
   type Comment {
-    text: String!
-    author: User!
-    createdAt: String!
+    text: String
+    author: User
+    createdAt: String
   }
 
   type Query {
