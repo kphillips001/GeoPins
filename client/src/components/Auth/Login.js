@@ -44,9 +44,10 @@ const Login = ({ classes }) => {
         Welcome
       </Typography>
       <GoogleLogin
-        clientId="319934585705-qvm21ge8n874vo0ag6s3v7clpffld5r6.apps.googleusercontent.com"
+        clientId='319934585705-qvm21ge8n874vo0ag6s3v7clpffld5r6.apps.googleusercontent.com'
         onSuccess={onSuccess}
         isSignedIn={true}
+        buttonText='Login with Google'
         theme='dark'
       />
     </div>
