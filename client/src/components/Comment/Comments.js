@@ -6,6 +6,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 import ListItemAvatar from "@material-ui/core/ListItemAvatar";
 import Avatar from "@material-ui/core/Avatar";
 import Typography from "@material-ui/core/Typography";
+import format from 'date-fns/format';
 
 const Comments = ({ comments, classes }) => (
   <List className={classes.root}>
@@ -25,6 +26,7 @@ const Comments = ({ comments, classes }) => (
               >
                 {comment.author.name}
               </Typography>{" "}
+              · {format(Number(comment.createdAt), "MMM d, yyyy")} 
             </>
           }
         />
