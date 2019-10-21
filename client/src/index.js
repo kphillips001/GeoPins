@@ -20,12 +20,12 @@ const wsLink = new WebSocketLink({
   options: {
     reconnect: true
   }
-})
+});
 
 const client = new ApolloClient({
   link: wsLink,
   cache: new InMemoryCache()
-})
+});
 
 const Root = () => {
   const initialState = useContext(Context);

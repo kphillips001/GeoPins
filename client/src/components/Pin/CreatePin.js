@@ -51,15 +51,12 @@ const CreatePin = ({ classes }) => {
       variables
       );
     
-    console.log('Pin created', {createPin});
-    dispatch({ type: 'CREATE_PIN', payload: createPin})
     handleDeleteDraft();
     } catch (err) {
       setSubmitting(false)
       console.error('Error creating pin', err)
     }
   }
-
 
   return (
     <form className={classes.form}>
