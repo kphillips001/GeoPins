@@ -25,7 +25,6 @@ const Comments = ({ comments, classes }) => (
               >
                 {comment.author.name}
               </Typography>{" "}
-             
             </>
           }
         />
